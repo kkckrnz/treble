@@ -71,10 +71,9 @@ git push -u origin main
 - [Precompiled firmware](/firmware/treble-nice_nano_v2-zmk.uf2.zip) is also available.
 - Check out my personal [zmk-config](https://github.com/kkckrnz/zmk-config-treble) to see how I configured my keymap.
 - There's [video guide](https://www.youtube.com/watch?v=O_urj-rF3bQ) by Joe Scotto if you would rather setup from scratch.
-Follow [ZMK Firmware Build Guide](docs/zmk_firmware_build_guide.md) to create and flash ZMK firmware.
 
 ### Other Firmware
 Since the keyboard is pro micro compatible it should be able to run QMK & KMK as well (not tested).
 
 ## Build guide
-Follow [Build Guide](docs/build_guide.md) to assemble the keyboard.
+Follow [Build Guide](docs/treble_build_guide.md) to assemble the keyboard.
