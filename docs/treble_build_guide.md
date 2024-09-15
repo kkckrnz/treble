@@ -71,7 +71,7 @@ Solder MCU board:
 ![battery](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
 ## 3. Testing
-1. Follow [ZMK Firmware Build Guide](README.md### ZMK Firmware Build Guide) to create and flash the firmware.
+1. Flash the firmware.
 2. Go to [keyboard tester](https://www.keyboardtester.com/tester.html) and simulate key press using a pair of tweezers.
 
 ![testing](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)

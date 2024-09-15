@@ -49,16 +49,40 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 ## PCB order guide
 1. Download gerber files from releases
 2. Submit gerber files to PCB manufacturer (eg. JLCPCB)
-3. Select options [JLCPCB manufacturing options](docs/jlcpcb_manufacturing_options.md)
+3. Select options
 4. Order
+
+### JLCPCB manufacturing options
+Most options are default. Changed options in *italic*:
+- Base Material: FR-4
+- Layers: 2
+- Dimensions: (automatically filled in)
+- PCB Qty: 5
+- Product Type: Industrial/Consumer electronics
+- Different Design: 1
+- Delivery Format: Single PCB
+- PCB Thickness: 1.6
+- PCB Color: *Black*
+- Silkscreen: White
+- Surface Finish: *LeadFree HASL*
+- Outer Copper Weight: 1 oz
+- Via Covering: Tented
+- Min via hole size/diameter: 0.3mm/(0.4/0.45mm)
+- Board Outline Tolerance: ±0.2mm(Regular)
+- Confirm Production file: No
+- Mark on PCB: *Remove Mark*
+- Electrical Test: Flying Probe Fully Test
+- Gold Fingers: No
+- Castellated Holes: No
+- Edge Plating: No
 
 I recommend **LeadFree HASL** option because you will be handling the keyboard directly without a case. Pick the PCB color of your choice. **Remove Mark** so you won't see random number printed on the PCB.
 
 ## Firmware
-### ZMK Firmware Build Guide
+### ZMK
 1. Setup GitHub Repo by following [ZMK documentation](https://zmk.dev/docs/user-setup#github-repo)
 2. Setup User Config by following [ZMK documentation](https://zmk.dev/docs/user-setup#user-config-setup-script)	
-3. Copy & Paste `/boards`, `/config`, `build.yaml` from [zmk-config folder](/firmware/zmk-config) in this repo to zmk-config folder in your repo
+3. Copy & Paste `/boards`, `/config`, and `build.yaml` from [zmk-config folder](/firmware/zmk-config) in this repo to zmk-config folder in your repo
 4. Customise `treble.keymap` and `treble.conf` files in `/config` however you like it. Then push changes to your repo
 ```
 git add .
