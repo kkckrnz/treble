@@ -1,13 +1,11 @@
-# Treble Keyboard
-Treble keyboard is a 42 key, low profile choc v1, monoblock, moderate column staggered, wireless/wired mechanical keyboard powered by pro micro compatible MCU board.
-
-It is designed with [ergogen](https://github.com/ergogen/ergogen), the ergonomic keyboard generator. It doesn't have aggressive column stagger nor angle between the halves so anyone who's used to traditional row staggered keyboard can adopt to column staggered keyboard easier.
+# Treble
+Treble keyboard is a 42 key, low profile choc v1, monoblock, moderate column staggered, wireless/wired mechanical keyboard powered by pro micro compatible MCU board. It is designed with [ergogen](https://github.com/ergogen/ergogen), the ergonomic keyboard generator.
 
 ![treble_top](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 ![treble_front](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 ![treble_bottom](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
-The sandwich PCB design concept came from [Horizon keyboard](https://github.com/skarrmann/horizon). Bottom plate cutouts for through-hole pins makeee it so that keyboard can be put on any surface, and the cover plate hides all the other internal components. Overall, this design makes the keyboard clean, low profile and look more finished without needing a dedicated case.
+The sandwich PCB design concept came from [Horizon keyboard](https://github.com/skarrmann/horizon). Bottom plate cutouts for through-hole pins makes it so that keyboard can be put on any surface, and the cover plate hides all the other internal components. Overall, this design makes the keyboard clean, low profile and look more finished without needing a dedicated case.
 
 ![treble_pcbs](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
@@ -15,18 +13,18 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 - Rectangular design for improved stability; easier to put on your lap and type
 - Low profile: total height is about 15mm tall
 - Compact: overall size smaller than Apple Magic Keyboard
-- Column staggered: not strongly staggered so it's easy transition from row staggered keyboard yet it provides more comfortable typing experience
+- Column staggered: mildly staggered so it's easy transition from row staggered keyboard yet it provides more comfortable typing experience
 - 6 thumb keys: enough thumb keys for switching to different layers
 - PCBs-for-case design
-- Wireless/Wired depends on your preference
+- Wireless/Wired depending on your preference
 
 ## Bill of Materials
 
 | **Part**                             | **Quantity** | **Notes**                                           |
 | ------------------------------------ | ------------ | --------------------------------------------------- |
-| **Main PCB**                         | 1            |                                                     |
-| **Cover plate PCB**                  | 1            |                                                     |
-| **Bottom plate PCB**                 | 1            |                                                     |
+| **Main PCB**                         | 1            | treble_vx.x.zip                                     |
+| **Cover plate PCB**                  | 1            | treble_vx.x_cover_plate.zip                         |
+| **Bottom plate PCB**                 | 1            | treble_vx.x_bottom_plate.zip                        |
 | **MCU board**                        | 1            | Pro Micro compatible board                          |
 | **Machine Sockets**                  | 2            | Mill-Max 310                                        |
 | **Machine Socket Pins**              | 24           | Mill-Max 3320                                       |
@@ -46,10 +44,13 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 - Male JST connector is only needed if the battery doesn't come with it
 - You don't need Power switch, JST connector, and Battery if you build a wired keyboard
 
+## Printable Treble
+Download [Treble-A4.pdf](/docs/treble-A4.pdf) and print it. Test the keyboard layout with your own hands.
+
 ## PCB order guide
-1. Download gerber files from releases
-2. Submit gerber files to PCB manufacturer (eg. JLCPCB)
-3. Select options
+1. Download gerber files from *Releases* on sidebar
+2. Submit gerber files to PCB manufacturer
+3. Select manufacturing options
 4. Order
 
 ### JLCPCB manufacturing options
