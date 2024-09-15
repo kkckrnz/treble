@@ -107,5 +107,5 @@ For any issues or questions please let me know.
 
 If you have built and enjoyed the keyboard, consider supporting me so I can work on future developments.
 
-[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/<kkckrnz>)
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/kkckrnz)
 
