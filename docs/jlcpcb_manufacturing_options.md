@@ -1,5 +1,5 @@
 # JLCPCB manufacturing options
-Most options are default. Changed options in Bold:
+Most options are default. Changed options in *italic*:
 - Base Material: FR-4
 - Layers: 2
 - Dimensions: (automatically filled in)
@@ -8,15 +8,15 @@ Most options are default. Changed options in Bold:
 - Different Design: 1
 - Delivery Format: Single PCB
 - PCB Thickness: 1.6
-- PCB Color: **Black**
+- PCB Color: *Black*
 - Silkscreen: White
-- Surface Finish: **LeadFree HASL**
+- Surface Finish: *LeadFree HASL*
 - Outer Copper Weight: 1 oz
 - Via Covering: Tented
 - Min via hole size/diameter: 0.3mm/(0.4/0.45mm)
 - Board Outline Tolerance: ±0.2mm(Regular)
 - Confirm Production file: No
-- Mark on PCB: **Remove Mark**
+- Mark on PCB: *Remove Mark*
 - Electrical Test: Flying Probe Fully Test
 - Gold Fingers: No
 - Castellated Holes: No
