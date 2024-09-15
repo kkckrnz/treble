@@ -1,0 +1,6 @@
+if SHIELD_TREBLE
+
+config ZMK_KEYBOARD_NAME
+    default "Treble"
+
+endif

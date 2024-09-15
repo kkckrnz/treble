@@ -1,0 +1,559 @@
+
+
+(kicad_pcb
+  (version 20240108)
+  (generator "ergogen")
+  (generator_version "4.1.0")
+  (general
+    (thickness 1.6)
+    (legacy_teardrops no)
+  )
+  (paper "A3")
+  (title_block
+    (title "treble_cover_plate")
+    (date "2024-09-01")
+    (rev "1")
+    (company "Ken Choi")
+  )
+
+  (layers
+    (0 "F.Cu" signal)
+    (31 "B.Cu" signal)
+    (32 "B.Adhes" user "B.Adhesive")
+    (33 "F.Adhes" user "F.Adhesive")
+    (34 "B.Paste" user)
+    (35 "F.Paste" user)
+    (36 "B.SilkS" user "B.Silkscreen")
+    (37 "F.SilkS" user "F.Silkscreen")
+    (38 "B.Mask" user)
+    (39 "F.Mask" user)
+    (40 "Dwgs.User" user "User.Drawings")
+    (41 "Cmts.User" user "User.Comments")
+    (42 "Eco1.User" user "User.Eco1")
+    (43 "Eco2.User" user "User.Eco2")
+    (44 "Edge.Cuts" user)
+    (45 "Margin" user)
+    (46 "B.CrtYd" user "B.Courtyard")
+    (47 "F.CrtYd" user "F.Courtyard")
+    (48 "B.Fab" user)
+    (49 "F.Fab" user)
+  )
+
+  (setup
+    (pad_to_mask_clearance 0.05)
+    (allow_soldermask_bridges_in_footprints no)
+    (pcbplotparams
+      (layerselection 0x00010fc_ffffffff)
+      (plot_on_all_layers_selection 0x0000000_00000000)
+      (disableapertmacros no)
+      (usegerberextensions no)
+      (usegerberattributes yes)
+      (usegerberadvancedattributes yes)
+      (creategerberjobfile yes)
+      (dashed_line_dash_ratio 12.000000)
+      (dashed_line_gap_ratio 3.000000)
+      (svgprecision 4)
+      (plotframeref no)
+      (viasonmask no)
+      (mode 1)
+      (useauxorigin no)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (pdf_front_fp_property_popups yes)
+      (pdf_back_fp_property_popups yes)
+      (dxfpolygonmode yes)
+      (dxfimperialunits yes)
+      (dxfusepcbnewfont yes)
+      (psnegative no)
+      (psa4output no)
+      (plotreference yes)
+      (plotvalue yes)
+      (plotfptext yes)
+      (plotinvisibletext no)
+      (sketchpadsonfab no)
+      (subtractmaskfromsilk no)
+      (outputformat 1)
+      (mirror no)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory "")
+    )
+  )
+
+  (net 0 "")
+(net 1 "H1_Hole")
+(net 2 "H2_Hole")
+(net 3 "H3_Hole")
+(net 4 "H4_Hole")
+
+  
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 193.75 145.75 0)
+        
+        (fp_text reference "H1" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 193.75 111.75 0)
+        
+        (fp_text reference "H2" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 220.25 145.75 0)
+        
+        (fp_text reference "H3" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 220.25 111.75 0)
+        
+        (fp_text reference "H4" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+    )
+    
+
+    (footprint "logo_treble"
+        (layer "F.Cu")
+        (at 207 128.75 0)
+        
+        (fp_text reference "TL1"
+            (at 0 -3.2)
+            (layer F.SilkS) hide
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (attr board_only exclude_from_pos_files exclude_from_bom)
+        (fp_line
+            (start -13.25 -8.5)
+            (end -1.6 -8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start -13.25 -4.25)
+            (end -1.1 -4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start -13.25 0)
+            (end -4.6 0)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start -13.25 4.25)
+            (end -5.1 4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start -13.25 8.5)
+            (end 1.6 8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start 1.3 0)
+            (end 13.25 0)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start 2.2 -4.25)
+            (end 13.25 -4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start 3.1 8.5)
+            (end 13.25 8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start 3.5 -8.5)
+            (end 13.25 -8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_line
+            (start 5.4 4.25)
+            (end 13.25 4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Cu")
+        )
+        (fp_poly
+            (pts
+                (xy 1.488744 -12.251213) (xy 1.672989 -12.178316) (xy 1.948081 -11.998451) (xy 2.203369 -11.741774)
+                (xy 2.433447 -11.415628) (xy 2.63291 -11.027357) (xy 2.757219 -10.70555) (xy 2.882705 -10.297637)
+                (xy 2.97069 -9.914213) (xy 3.027503 -9.520496) (xy 3.059469 -9.0817) (xy 3.061627 -9.031933) (xy 3.05174 -8.25502)
+                (xy 2.958244 -7.476018) (xy 2.780916 -6.694338) (xy 2.51953 -5.909392) (xy 2.173864 -5.120592) (xy 1.743693 -4.327351)
+                (xy 1.228793 -3.52908) (xy 0.687626 -2.799328) (xy 0.55095 -2.622776) (xy 0.435694 -2.468392) (xy 0.351231 -2.349162)
+                (xy 0.30693 -2.278075) (xy 0.302555 -2.265715) (xy 0.311732 -2.214875) (xy 0.337121 -2.091111) (xy 0.37649 -1.904858)
+                (xy 0.427608 -1.666555) (xy 0.488242 -1.386639) (xy 0.556161 -1.075547) (xy 0.589483 -0.923725) (xy 0.875127 0.375575)
+                (xy 1.344706 0.365593) (xy 1.786022 0.38081) (xy 2.189174 0.451129) (xy 2.585483 0.58353) (xy 2.838824 0.698536)
+                (xy 3.221094 0.921966) (xy 3.596412 1.20573) (xy 3.946556 1.532401) (xy 4.253304 1.884554) (xy 4.498434 2.244764)
+                (xy 4.546814 2.331878) (xy 4.730734 2.767915) (xy 4.845212 3.240675) (xy 4.892175 3.740021) (xy 4.87355 4.255815)
+                (xy 4.791265 4.777921) (xy 4.647247 5.296202) (xy 4.443422 5.800519) (xy 4.181719 6.280736) (xy 3.864064 6.726715)
+                (xy 3.668675 6.951096) (xy 3.368596 7.238408) (xy 3.044901 7.489333) (xy 2.723643 7.683995) (xy 2.678587 7.706478)
+                (xy 2.54647 7.783086) (xy 2.494073 7.847522) (xy 2.494538 7.87085) (xy 2.524671 7.989723) (xy 2.567815 8.178086)
+                (xy 2.621077 8.421703) (xy 2.681564 8.70634) (xy 2.746382 9.017761) (xy 2.812639 9.341732) (xy 2.877442 9.664017)
+                (xy 2.937897 9.970381) (xy 2.991111 10.24659) (xy 3.034191 10.478407) (xy 3.064244 10.651599) (xy 3.07643 10.733927)
+                (xy 3.105251 11.237129) (xy 3.073386 11.746487) (xy 2.988036 12.206663) (xy 2.826675 12.681574) (xy 2.601568 13.101391)
+                (xy 2.316334 13.463472) (xy 1.974589 13.765179) (xy 1.579952 14.003872) (xy 1.136039 14.176912) (xy 0.64647 14.281659)
+                (xy 0.114861 14.315474) (xy 0.097851 14.315361) (xy -0.114046 14.307877) (xy -0.322674 14.290992)
+                (xy -0.493991 14.267786) (xy -0.545695 14.257123) (xy -0.945489 14.120828) (xy -1.32287 13.909274)
+                (xy -1.685052 13.618158) (xy -1.794043 13.512425) (xy -2.086699 13.180343) (xy -2.306253 12.843278)
+                (xy -2.46377 12.481919) (xy -2.542644 12.205882) (xy -2.592769 11.826056) (xy -2.565517 11.461632)
+                (xy -2.465069 11.122169) (xy -2.295607 10.817224) (xy -2.061313 10.556356) (xy -1.76637 10.349122)
+                (xy -1.719411 10.324393) (xy -1.595673 10.265798) (xy -1.487573 10.228972) (xy -1.368392 10.208961)
+                (xy -1.211411 10.200809) (xy -1.045882 10.199496) (xy -0.845655 10.201292) (xy -0.704061 10.21042)
+                (xy -0.594372 10.232488) (xy -0.489862 10.273103) (xy -0.363802 10.337873) (xy -0.349513 10.345607)
+                (xy -0.050933 10.549211) (xy 0.181136 10.79296) (xy 0.348667 11.067093) (xy 0.453633 11.361848) (xy 0.498006 11.667463)
+                (xy 0.48376 11.974177) (xy 0.412868 12.272228) (xy 0.287302 12.551855) (xy 0.109035 12.803296) (xy -0.11996 13.016788)
+                (xy -0.39771 13.182572) (xy -0.722242 13.290884) (xy -0.951734 13.32538) (xy -1.241787 13.349845)
+                (xy -1.128143 13.468463) (xy -0.938965 13.610449) (xy -0.687192 13.717349) (xy -0.388165 13.788937)
+                (xy -0.057227 13.824988) (xy 0.29028 13.825274) (xy 0.639016 13.78957) (xy 0.973636 13.717651) (xy 1.278801 13.60929)
+                (xy 1.474558 13.506796) (xy 1.736499 13.297624) (xy 1.968628 13.017231) (xy 2.16594 12.676092) (xy 2.323429 12.284678)
+                (xy 2.436089 11.853465) (xy 2.498916 11.392927) (xy 2.501445 11.358002) (xy 2.509484 11.200524) (xy 2.510468 11.046273)
+                (xy 2.502885 10.884486) (xy 2.485225 10.7044) (xy 2.455976 10.495254) (xy 2.413628 10.246284) (xy 2.35667 9.946728)
+                (xy 2.283591 9.585824) (xy 2.19288 9.152809) (xy 2.189892 9.138693) (xy 1.947208 7.992513) (xy 1.795369 8.018811)
+                (xy 1.204177 8.095924) (xy 0.628641 8.121797) (xy 0.086572 8.096378) (xy -0.380578 8.024806) (xy -1.046249 7.840076)
+                (xy -1.68108 7.582073) (xy -2.277999 7.255872) (xy -2.829931 6.866548) (xy -3.329804 6.419176) (xy -3.770545 5.91883)
+                (xy -4.145081 5.370586) (xy -4.19192 5.290141) (xy -4.469425 4.729835) (xy -4.667416 4.157383) (xy -4.789005 3.560973)
+                (xy -4.805283 3.347899) (xy -3.474822 3.347899) (xy -3.470898 3.635851) (xy -3.461087 3.859599) (xy -3.443408 4.040226)
+                (xy -3.41588 4.198819) (xy -3.38184 4.337237) (xy -3.184066 4.916459) (xy -2.921336 5.454376) (xy -2.59895 5.94419)
+                (xy -2.222205 6.379104) (xy -1.796401 6.752321) (xy -1.326835 7.057044) (xy -1.216638 7.114996) (xy -1.022434 7.200398)
+                (xy -0.776327 7.290777) (xy -0.510409 7.37579) (xy -0.256771 7.445095) (xy -0.068616 7.484976) (xy 0.170776 7.511581)
+                (xy 0.462372 7.523846) (xy 0.774272 7.522141) (xy 1.07458 7.50684) (xy 1.331398 7.478316) (xy 1.391655 7.467918)
+                (xy 1.553616 7.432992) (xy 1.683461 7.397716) (xy 1.757715 7.36865) (xy 1.764219 7.363781) (xy 1.761631 7.317446)
+                (xy 1.742942 7.196457) (xy 1.709962 7.009639) (xy 1.664503 6.765814) (xy 1.608376 6.473807) (xy 1.543392 6.142443)
+                (xy 1.471362 5.780545) (xy 1.394098 5.396937) (xy 1.313409 5.000443) (xy 1.231108 4.599888) (xy 1.149006 4.204095)
+                (xy 1.068913 3.821889) (xy 0.992641 3.462093) (xy 0.922001 3.133531) (xy 0.858805 2.845028) (xy 0.804862 2.605407)
+                (xy 0.761984 2.423493) (xy 0.731983 2.308109) (xy 0.718739 2.270056) (xy 0.662389 2.254006) (xy 0.550925 2.278144)
+                (xy 0.400801 2.3361) (xy 0.228468 2.421502) (xy 0.05038 2.527981) (xy 0.047213 2.530058) (xy -0.168577 2.708648)
+                (xy -0.37247 2.943871) (xy -0.542589 3.207567) (xy -0.635535 3.4089) (xy -0.721726 3.709229) (xy -0.773652 4.04332)
+                (xy -0.791581 4.389999) (xy -0.775777 4.728093) (xy -0.726506 5.036432) (xy -0.644034 5.29384) (xy -0.611049 5.361307)
+                (xy -0.522169 5.491591) (xy -0.382333 5.657968) (xy -0.20762 5.843656) (xy -0.014111 6.031873) (xy 0.182116 6.205837)
+                (xy 0.256135 6.266376) (xy 0.341553 6.337074) (xy 0.363058 6.366433) (xy 0.325183 6.36415) (xy 0.298824 6.357693)
+                (xy 0.166543 6.311429) (xy -0.016759 6.231422) (xy -0.229403 6.128698) (xy -0.449711 6.014281) (xy -0.656003 5.899197)
+                (xy -0.826602 5.79447) (xy -0.878814 5.75879) (xy -1.224549 5.468674) (xy -1.519128 5.132996) (xy -1.752736 4.765878)
+                (xy -1.915554 4.381443) (xy -1.965558 4.195472) (xy -1.999043 3.935402) (xy -2.002765 3.6278) (xy -1.978929 3.304302)
+                (xy -1.92974 2.996541) (xy -1.865381 2.75848) (xy -1.687791 2.351944) (xy -1.577453 2.170871) (xy 1.290866 2.170871)
+                (xy 1.296336 2.214337) (xy 1.317943 2.332341) (xy 1.353806 2.515967) (xy 1.402045 2.756298) (xy 1.460782 3.044416)
+                (xy 1.528136 3.371406) (xy 1.60223 3.728349) (xy 1.681182 4.106329) (xy 1.763113 4.496428) (xy 1.846145 4.889731)
+                (xy 1.928397 5.277319) (xy 2.00799 5.650275) (xy 2.083045 5.999683) (xy 2.151682 6.316626) (xy 2.212022 6.592187)
+                (xy 2.262185 6.817448) (xy 2.300292 6.983493) (xy 2.324463 7.081404) (xy 2.329469 7.09849) (xy 2.350932 7.123905)
+                (xy 2.396317 7.118241) (xy 2.476137 7.075877) (xy 2.600908 6.991193) (xy 2.781143 6.858568) (xy 2.788301 6.853201)
+                (xy 3.052912 6.605428) (xy 3.282738 6.292791) (xy 3.473074 5.93033) (xy 3.619219 5.533084) (xy 3.716468 5.116093)
+                (xy 3.760119 4.694397) (xy 3.745467 4.283034) (xy 3.689011 3.973052) (xy 3.542764 3.571948) (xy 3.324445 3.20703)
+                (xy 3.042323 2.885593) (xy 2.704665 2.61493) (xy 2.319741 2.402335) (xy 1.895818 2.255102) (xy 1.69228 2.211725)
+                (xy 1.522492 2.185391) (xy 1.386509 2.16986) (xy 1.304695 2.167206) (xy 1.290866 2.170871) (xy -1.577453 2.170871)
+                (xy -1.446037 1.955207) (xy -1.152669 1.581425) (xy -0.820235 1.243754) (xy -0.461285 0.955349) (xy -0.088368 0.729367)
+                (xy 0.181429 0.612805) (xy 0.298084 0.552619) (xy 0.341465 0.484521) (xy 0.341513 0.482219) (xy 0.332774 0.417619)
+                (xy 0.308565 0.283953) (xy 0.271897 0.09551) (xy 0.225781 -0.133423) (xy 0.173229 -0.388557) (xy 0.117251 -0.655605)
+                (xy 0.060859 -0.920278) (xy 0.007063 -1.168289) (xy -0.041123 -1.385348) (xy -0.080691 -1.557169)
+                (xy -0.108627 -1.669463) (xy -0.119246 -1.704062) (xy -0.138437 -1.721058) (xy -0.175931 -1.70904)
+                (xy -0.23846 -1.661828) (xy -0.332756 -1.573244) (xy -0.465552 -1.437105) (xy -0.64358 -1.247234)
+                (xy -0.791079 -1.087357) (xy -1.027257 -0.830411) (xy -1.290242 -0.544423) (xy -1.558305 -0.253013)
+                (xy -1.809721 0.020201) (xy -2.002235 0.22931) (xy -2.27542 0.529477) (xy -2.496801 0.781798) (xy -2.675514 0.998221)
+                (xy -2.820697 1.190696) (xy -2.941484 1.371174) (xy -3.047014 1.551604) (xy -3.120687 1.692184) (xy -3.255329 1.979377)
+                (xy -3.352837 2.241433) (xy -3.418287 2.502079) (xy -3.456755 2.78504) (xy -3.473313 3.114044) (xy -3.474822 3.347899)
+                (xy -4.805283 3.347899) (xy -4.837302 2.928795) (xy -4.838397 2.83563) (xy -4.827566 2.374343) (xy -4.787323 1.958318)
+                (xy -4.712276 1.554227) (xy -4.597032 1.128742) (xy -4.526861 0.910134) (xy -4.287632 0.294864) (xy -3.980434 -0.319558)
+                (xy -3.602797 -0.936517) (xy -3.152252 -1.559401) (xy -2.626329 -2.191597) (xy -2.02256 -2.836491)
+                (xy -1.338474 -3.497471) (xy -1.262119 -3.567731) (xy -1.047497 -3.765235) (xy -0.88854 -3.914793)
+                (xy -0.7774 -4.025517) (xy -0.706231 -4.106522) (xy -0.667187 -4.16692) (xy -0.652421 -4.215827)
+                (xy -0.654086 -4.262354) (xy -0.655688 -4.272101) (xy -0.671097 -4.352851) (xy -0.700626 -4.501979)
+                (xy -0.741212 -4.704233) (xy -0.789793 -4.944358) (xy -0.843307 -5.207102) (xy -0.84852 -5.232605)
+                (xy -0.94488 -5.720658) (xy -1.020029 -6.144427) (xy -1.075818 -6.521832) (xy -1.087322 -6.626706)
+                (xy -0.509297 -6.626706) (xy -0.463809 -6.025372) (xy -0.368781 -5.383684) (xy -0.298547 -5.030577)
+                (xy -0.26168 -4.857643) (xy -0.232862 -4.718289) (xy -0.216088 -4.632057) (xy -0.213445 -4.614358)
+                (xy -0.197919 -4.591097) (xy -0.147753 -4.611043) (xy -0.057566 -4.678436) (xy 0.078023 -4.797512)
+                (xy 0.264394 -4.972508) (xy 0.367354 -5.071686) (xy 0.562663 -5.267058) (xy 0.759567 -5.474744) (xy 0.938805 -5.673735)
+                (xy 1.081117 -5.843023) (xy 1.117798 -5.890252) (xy 1.346054 -6.231558) (xy 1.568357 -6.635191) (xy 1.774811 -7.078193)
+                (xy 1.955516 -7.537604) (xy 2.100575 -7.990466) (xy 2.195758 -8.390595) (xy 2.244772 -8.744259) (xy 2.261797 -9.103008)
+                (xy 2.248187 -9.44871) (xy 2.205299 -9.763233) (xy 2.134488 -10.028449) (xy 2.061352 -10.188394)
+                (xy 1.942005 -10.317514) (xy 1.782616 -10.380858) (xy 1.59125 -10.383183) (xy 1.375972 -10.329248)
+                (xy 1.144849 -10.223809) (xy 0.905945 -10.071626) (xy 0.667327 -9.877456) (xy 0.437059 -9.646056)
+                (xy 0.223207 -9.382185) (xy 0.033836 -9.0906) (xy -0.043802 -8.946555) (xy -0.148852 -8.707928) (xy -0.253973 -8.41628)
+                (xy -0.349065 -8.103361) (xy -0.424031 -7.800921) (xy -0.449521 -7.670963) (xy -0.504713 -7.178349)
+                (xy -0.509297 -6.626706) (xy -1.087322 -6.626706) (xy -1.114097 -6.870795) (xy -1.136716 -7.209234)
+                (xy -1.145527 -7.555072) (xy -1.142379 -7.926229) (xy -1.139287 -8.048431) (xy -1.126448 -8.406847)
+                (xy -1.108256 -8.70154) (xy -1.081142 -8.954145) (xy -1.041538 -9.186298) (xy -0.985876 -9.419637)
+                (xy -0.910588 -9.675795) (xy -0.830255 -9.922385) (xy -0.627724 -10.463623) (xy -0.405366 -10.939687)
+                (xy -0.16577 -11.348245) (xy 0.088473 -11.68696) (xy 0.354774 -11.9535) (xy 0.630542 -12.145529)
+                (xy 0.913186 -12.260714) (xy 1.200117 -12.29672)
+            )
+            (stroke
+                (width 0)
+                (type solid)
+            )
+            (fill solid)
+            (layer "F.SilkS")
+        )
+        (fp_line
+            (start -13.25 -8.5)
+            (end -1.6 -8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start -13.25 -4.25)
+            (end -1.1 -4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start -13.25 0)
+            (end -4.6 0)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start -13.25 4.25)
+            (end -5.1 4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start -13.25 8.5)
+            (end 1.6 8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start 1.3 0)
+            (end 13.25 0)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start 2.2 -4.25)
+            (end 13.25 -4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start 3.1 8.5)
+            (end 13.25 8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start 3.5 -8.5)
+            (end 13.25 -8.5)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+        (fp_line
+            (start 5.4 4.25)
+            (end 13.25 4.25)
+            (stroke
+                (width 0.25)
+                (type default)
+            )
+            (layer "F.Mask")
+        )
+    )
+    
+
+  (gr_text "TREBLE v1.0\nby Ken Choi"
+    (at 207 145.75 0)
+    (layer "B.SilkS" )
+    (effects
+      (font (face "Roboto Mono")
+        (size 1.315 1.315)
+        (thickness 0.15)
+        (bold yes)
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "github.com/kkckrnz/treble"
+    (at 207 150.75 0)
+    (layer "B.SilkS" )
+    (effects
+      (font (face "Roboto Mono")
+        (size 1.315 1.315)
+        (thickness 0.15)
+        (bold yes)
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+  (gr_line (start 190.25 154) (end 223.75 154) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 224.75 153) (end 224.75 104.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 223.75 103.5) (end 190.25 103.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 189.25 104.5) (end 189.25 153) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 223.75 154) (mid 224.4571068 153.7071068) (end 224.75 153) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 224.75 104.5) (mid 224.4571068 103.7928932) (end 223.75 103.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 190.25 103.5) (mid 189.5428932 103.7928932) (end 189.25 104.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 189.25 153) (mid 189.5428932 153.7071068) (end 190.25 154) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+
+)
+

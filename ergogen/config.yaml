@@ -1,0 +1,750 @@
+meta:
+  engine: 4.1.0
+  version: 1.0
+  author: Ken Choi
+
+########## footprints ##########
+# mcu: mcu_nice_nano (nice!nano compatible)
+# switch: switch_choc_v1_v2
+# reset: reset_switch_smd_side (EVQPU)
+# power: power_switch_smd_side (MSK-12C02)
+# jst: battery_connector_jst_ph_2 (S2B-PH-K-S(LF)(SN))
+# diode: diode_tht_sod123 (SOD123 1N4148W)
+# mounting hole: mountinghole_m2_via
+
+# mcu cutout: cutout_mcu
+# switch cutout: cutout_switch
+# jst cutout: cutout_jst
+
+# filled zone: utility_filled_zone
+# ruled area: utility_ruled_area
+# text: utility_text
+# logo: logo_treble
+
+########## units ##########
+units:
+  # custom preview variables for choc keycaps
+  $default_width: cx
+  $default_height: cy
+
+  # key spacing
+  kx: 1cx
+  ky: 1cy
+
+  # keycap
+  cap_w: 17.5
+  cap_h: 16.5
+
+  # column stagger
+  c_matrix_pinky_ring: 0.25ky
+  c_matrix_ring_middle: 0.25ky
+  c_matrix_middle_index: 0.25ky
+  c_matrix_cluster: 0
+  c_cluster_home_outer: 0.75ky
+
+  # row stagger
+  r_mirror: 0.125kx
+  r_cluster_inner_home: 0.25kx
+  r_matrix_cluster: 7kx - 3kx - r_mirror - r_cluster_inner_home 
+
+  # board edge border
+  edge_border_x: 0
+  edge_border_y: 0.25ky
+
+  # plate mounting hole position from board corner
+  plate_mounting_hole_distance: ((c_matrix_pinky_ring + c_matrix_ring_middle) + edge_border_y)/2
+
+  # dimensions 
+  board_h: 4ky + c_matrix_pinky_ring + c_matrix_ring_middle + c_matrix_cluster + c_cluster_home_outer + 2*edge_border_y
+
+  cover_w: 2kx
+  cover_h: 3ky
+
+  mcu_w: 17.78 
+  mcu_h: 33.08
+
+  reset_w: 4.7
+  reset_h: 3.5
+
+  power_w: 6.7 # MSK-12C02: 6.65
+  power_h: 2.6 # MSK-12C02: 2.7
+
+  jst_w: 5.9
+  jst_h: 7.6
+
+  diode_w: 3.85 # switch led hole width: 5
+  diode_h: 1.65 # switch led hole height: 3.15
+
+  mounting_hole_r: 1
+
+  battery_w: 12 # 301230 lipo battery
+  battery_h: 30
+
+########## points ##########
+points:
+  key:
+    spread: kx
+    padding: ky
+  
+  zones:
+    # keys
+    matrix:
+      anchor:
+        shift: [90, -150] # fix placement on KiCad sheet
+      key.tags: switch
+      columns:
+        outer:
+          key:
+            column_net: P10
+            mirror:
+              tags: switch_mirror
+              column_net: P19
+        pinky:
+          key:
+            column_net: P16
+            mirror:
+              tags: switch_mirror
+              column_net: P18
+        ring:
+          key:
+            stagger: c_matrix_pinky_ring
+            column_net: P14
+            mirror:
+              tags: switch_mirror
+              column_net: P15
+        middle:
+          key:
+            stagger: c_matrix_ring_middle
+            column_net: P15
+            mirror:
+              tags: switch_mirror
+              column_net: P14
+        index:
+          key:
+            stagger: -c_matrix_middle_index
+            column_net: P18
+            mirror:
+              tags: switch_mirror
+              column_net: P16
+        inner:
+          key:
+            column_net: P19
+            mirror:
+              tags: switch_mirror
+              column_net: P10
+      rows:
+        bottom:
+          row_net: P9
+          mirror.row_net: P7
+        home:
+          row_net: P20
+          mirror.row_net: P6
+        top:
+          row_net: P21
+          mirror.row_net: P5
+
+    cluster:
+      key.tags: switch
+      anchor:
+        ref: matrix_outer_bottom
+        shift: [r_matrix_cluster, -ky - c_matrix_cluster]
+      columns:
+        inner:
+          key:
+            column_net: P15
+            mirror:
+              tags: switch_mirror
+              column_net: P14                    
+        home:
+          key:
+            shift: [0.25kx, 0]
+            column_net: P18
+            mirror:
+              tags: switch_mirror
+              column_net: P16
+        outer:
+          key:
+            stagger: -c_cluster_home_outer
+            shift: [ 0.25kx, 0]
+            column_net: P19
+            mirror:
+              tags: switch_mirror
+              column_net: P10
+      rows:
+        thumb:
+          row_net: P8
+          mirror:
+            row_net: P8
+
+    # placeholder points for board, mcu cover, mounting holes
+    board_placeholder:
+      key.padding: board_h
+      anchor:
+        ref: matrix_middle_top
+        shift: [-0.5kx - 3kx - edge_border_x, 0.5ky + edge_border_y - board_h]
+      columns:
+        single:
+      rows:
+        bottom:
+        top:
+
+    cover_placeholder:
+      key.padding: cover_h
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [0.5kx, -0.5ky]
+      columns:
+        single:
+      rows:
+        bottom:
+        top:
+
+    # mounting holes
+    cover_mounting_holes:
+      key:
+        tags: cover_mounting_holes
+        padding: cover_h
+      # 0.5ky(8.5mm) from top/bottom of cover_placeholder
+      # 0.25kx(4.5mm) from left/right of cover_placeholder
+      # 0.25mm from left/right of cover_placeholder (cover inset) 
+      anchor:
+        ref: cover_placeholder_single_bottom
+        shift: [0.25kx + 0.25, 0.5ky]
+      columns:
+        single:
+      rows:
+        bottom:
+        top:
+          shift: [0, -0.5ky - 0.5ky]
+          
+    plate_mounting_holes:
+      key:
+        tags: plate_mounting_holes
+        padding: board_h
+      anchor:
+        ref: board_placeholder_single_bottom
+        shift: [plate_mounting_hole_distance, plate_mounting_hole_distance]
+      columns:
+        single:
+      rows:
+        bottom:
+        top:
+          shift: [0, -plate_mounting_hole_distance - plate_mounting_hole_distance]
+
+  mirror:
+    ref: cluster_outer_thumb
+    distance: kx + 2*r_mirror
+
+########## outlines ##########
+outlines:
+# exported outlines
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+
+  board:
+    - what: polygon
+      operation: stack
+      fillet: plate_mounting_hole_distance
+      points:
+        - ref: board_placeholder_single_bottom
+        - ref: board_placeholder_single_top
+        - ref: mirror_board_placeholder_single_top
+        - ref: mirror_board_placeholder_single_bottom
+
+  cover:
+    - what: rectangle
+      where: &cover # '&' makes it an alias which can be referenced later with '*'
+        ref.aggregate.parts: [matrix_inner_home, mirror_matrix_inner_home]
+      # 0.25mm inset top/bottom/left/right
+      size: [cover_w - 0.5, cover_h - 0.5]
+      fillet: 1
+
+# private outlines
+  _keycaps:
+    - what: rectangle
+      where: [switch, switch_mirror]
+      size: [kx-0.5, ky-0.5]
+  
+  _switches:
+    - what: rectangle
+      where: [switch, switch_mirror]
+      size: [14, 14]
+
+  _mcu: 
+    - what: rectangle
+      size: [mcu_w, mcu_h]
+      where: &mcu
+          ref: *cover
+          # down 16.51mm (footprint center to top of mcu)
+          # down 1.524mm (footprint usb connector height)
+          # down 0.25mm to fit under cover
+          shift: [0, 1.5ky - 16.51 - 1.524 - 0.25] 
+
+  _cover_mounting_holes:
+    - what: circle
+      radius: mounting_hole_r
+      where: cover_mounting_holes
+
+  _plate_mounting_holes:
+    - what: circle
+      radius: mounting_hole_r
+      where: plate_mounting_holes
+
+  _power:
+    - what: rectangle
+      size: [power_w, power_h]
+      where: &power
+        ref: mirror_cover_mounting_holes_single_top
+        # down 0.25mm to fit under cover
+        shift: [0, 0.5ky - power_h/2 - 0.25]
+  
+  _reset:
+    - what: rectangle
+      size: [reset_w, reset_h]
+      where: &reset
+        ref: cover_mounting_holes_single_top
+        # down 0.25mm to fit under cover
+        shift: [0, 0.5ky - reset_h/2 - 0.25]
+  
+  _jst:
+    - what: rectangle
+      size: [jst_w, jst_h]
+      where: &jst
+        ref.aggregate.parts: [mirror_cover_mounting_holes_single_bottom, mirror_cover_mounting_holes_single_top]
+        # note: ergogen footprint centre is at the pins not the centre of rectangle.
+        # align jst bottom silkscreen with mcu bottom silkscreen in kicad
+        shift: [0, -3]
+  
+  _diode:
+    - what: rectangle
+      size: [diode_w, diode_h]
+      where: [switch, switch_mirror]
+      adjust:
+        shift: [0, -4.7] 
+        
+  _switch_holes:
+    # board switch middle shaft
+    - what: circle
+      radius: 3.4/2
+      where: [switch, switch_mirror]
+    # board switch stablizers (default was 1.9 but changed to 1.7 for tighter fit)
+    - what: circle
+      radius: 1.7/2
+      where: [switch, switch_mirror]
+      adjust:
+        shift: [5.5,0]
+    - what: circle
+      radius: 1.7/2
+      where: [switch, switch_mirror]
+      adjust:
+        shift: [-5.5,0]
+    # board solder pins (default was 1.27 but changet to 1.2 for tighter fit)
+    - what: circle
+      radius: 1.2/2
+      where: [switch, switch_mirror]
+      adjust:
+        shift: [0, 5.9]
+    - what: circle
+      radius: 1.2/2
+      where: switch
+      adjust:
+        shift: [5, 3.8]
+    - what: circle
+      radius: 1.2/2
+      where: switch_mirror
+      adjust:
+        shift: [-5, 3.8]
+
+  _switch_bottom_plate_cutout:
+    # bottom plate switch middle shaft cutout
+    - what: circle
+      radius: 3.4/2
+      where: [switch, switch_mirror]
+    # bottom plate switch stablizer cutout
+    - what: circle
+      radius: 1.7/2
+      where: [switch, switch_mirror]
+      adjust:
+        shift: [5.5,0]
+    - what: circle
+      radius: 1.7/2
+      where: [switch, switch_mirror]
+      adjust:
+        shift: [-5.5,0]
+    # bottom plate solder pins cutout
+    - what: circle
+      radius: 2.4/2
+      where: [switch, switch_mirror]
+      adjust:
+        shift: [0, 5.9]
+    - what: circle
+      radius: 2.4/2
+      where: switch
+      adjust:
+        shift: [5, 3.8]
+    - what: circle
+      radius: 2.4/2
+      where: switch_mirror
+      adjust:
+        shift: [-5, 3.8]
+  
+  _battery:
+    - what: rectangle
+      where: *mcu
+      size: [battery_w, battery_h]
+
+  # combined outlines
+  keyboard_view:
+    - board
+    - ^_keycaps
+    - ^cover
+    - ^_cover_mounting_holes
+    - ^_plate_mounting_holes
+
+  board_view:
+    - board
+    - ^_mcu
+    - ^_cover_mounting_holes
+    - ^_plate_mounting_holes
+    - ^_switches
+    - ^_jst
+    - ^_power
+    - ^_reset
+    - ^_diode
+    - ^_switch_holes
+
+  cover_plate_view:
+    - cover
+    - -_cover_mounting_holes
+  
+  bottom_plate_view:
+    - board
+    - -_cover_mounting_holes
+    - -_plate_mounting_holes
+    - -_switch_bottom_plate_cutout
+
+  everything:
+    - board
+    - ^_keycaps
+    - ^_switches
+    - ^_mcu
+    - ^cover
+    - ^_cover_mounting_holes
+    - ^_plate_mounting_holes
+    - ^_jst
+    - ^_power
+    - ^_reset
+    - ^_diode
+    - ^_switch_holes
+    - ^_switch_bottom_plate_cutout
+    - ^_battery
+
+########## pcb ##########
+pcbs:
+  # main pcb
+  treble:
+    template: kicad8
+
+    outlines:
+      - outline: board
+        layer: Edge.Cuts
+      - outline: cover
+        layer: F.Adhes
+      - outline: board
+        layer: B.Adhes    
+
+    footprints:
+      switch:
+        what: switch_choc_v1_v2
+        where: [switch, switch_mirror]
+        params:
+          hotswap: false
+          solder: true
+          include_keycap: true
+          include_corner_marks: true
+          include_choc_v1_led_cutout_marks: true
+          choc_v2_support: false
+          choc_v1_stabilizers_diameter: 1.7 # tight fit for soldering
+          keycap_height: 17
+          switch_3dmodel_filename: '${EG_INFUSED_KIM_3D_MODELS}/Choc_V1_Switch.step'
+          switch_3dmodel_xyz_offset: [0, 0, 0]
+          switch_3dmodel_xyz_rotation: [180, 0, 0]
+          keycap_3dmodel_filename: '${EG_INFUSED_KIM_3D_MODELS}/Choc_V1_Keycap_MBK_White_1u.step'
+          keycap_3dmodel_xyz_offset: [0, 0, -7.5]
+          keycap_3dmodel_xyz_rotation: [180, 0, 0]
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+
+      switch_cutout_bottom_adhesive:
+        what: cutout_switch
+        where: [switch, switch_mirror]
+        params:
+          layer: B
+
+      diode:
+        what: diode_tht_sod123
+        where: [switch, switch_mirror]
+        adjust:
+          shift: [0, -4.7] # diode fits under switch led hole
+        params:
+          side: F
+          diode_3dmodel_filename: '${EG_INFUSED_KIM_3D_MODELS}/Diode_1N4148W.step'
+          diode_3dmodel_xyz_offset: [0, 0, 0.6]
+          diode_3dmodel_xyz_rotation: [90, 180, 180]
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+
+      mcu:
+        what: mcu_nice_nano
+        where: *mcu
+        params:
+          side: F
+          reverse_mount: true
+          include_traces: false
+          show_instructions: false
+          show_silk_labels_on_both_sides: false
+          show_via_labels: false
+          mcu_3dmodel_filename: '${EG_INFUSED_KIM_3D_MODELS}/Nice_Nano_V2.step'
+          mcu_3dmodel_xyz_offset: [0, 0, 4.7]
+          mcu_3dmodel_xyz_rotation: [0, 0, 0]
+
+      mcu_cutout_bottom_adhesive:
+        what: cutout_mcu
+        where: *mcu
+        params:
+          layer: B
+
+      jst:
+        what: battery_connector_jst_ph_2
+        where: *jst
+        params:
+          side: F
+          include_traces: false
+          include_fabrication: false
+          BAT_P: BAT_P
+          BAT_N: GND
+
+      jst_cutout_bottom_adhesive:
+        what: cutout_jst
+        where: *jst
+        params:
+          layer: B
+
+      power:
+        what: power_switch_smd_side
+        where: *power
+        adjust:
+          rotate: -90 # rotated to match ergogen footprint
+        params:
+          side: F
+          invert_behavior: false
+          include_courtyard: true
+          switch_3dmodel_filename: '${EG_INFUSED_KIM_3D_MODELS}/Switch_Power.step'
+          switch_3dmodel_xyz_rotation: [-90, 0, -90]
+          from: BAT_P
+          to: RAW
+
+      reset:
+        what: reset_switch_smd_side
+        where: *reset
+        params:
+          include_bosses: true
+          include_silkscreen: false
+          include_courtyard: true
+          from: GND
+          to: RST 
+ 
+      cover_mounting_holes:
+        what: mountinghole_m2_via
+        where: cover_mounting_holes
+
+      plate_mounting_holes:
+        what: mountinghole_m2_via
+        where: plate_mounting_holes
+
+      filled_zone:
+        what: utility_filled_zone
+        params:
+          side: F&B
+          fill_type: hatch
+          hatch_thickness: 0.5
+          hatch_gap: 1
+          hatch_orientation: 45
+          hatch_smoothing_level: 3
+
+      # antenna keepout area information optained from:
+      # https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32/pcb-layout-design.html
+      # area under cover plate will be ground fill free zone
+      antenna_keepout_zone:
+        what: utility_ruled_area
+        where: *cover
+        params:
+          width: cover_w - 0.5
+          height: cover_h - 0.5
+
+      text_treble_Cu:
+        what: utility_text
+        where: &treble_text
+          ref.aggregate.parts: [cluster_outer_thumb, mirror_cluster_outer_thumb]
+          shift: [0, 0.5ky + 0.5ky]
+        params:
+          side: F
+          layer: Cu
+          height: 3.5
+          width: 3.5
+          bold: true
+          face: 'Roboto Mono'
+          text: TREBLE
+
+      text_treble_Mask:
+        what: utility_text
+        where: *treble_text
+        params:
+          side: F
+          layer: Mask
+          height: 3.5
+          width: 3.5
+          bold: true
+          face: 'Roboto Mono'
+          text: TREBLE
+
+      text_treble_version:
+        what: utility_text
+        where: &treble_version
+          ref.aggregate.parts: [cover_mounting_holes_single_bottom, mirror_cover_mounting_holes_single_bottom]
+        params:
+          side: B
+          layer: SilkS
+          height: 1.315 # size smaller than this gives drc error
+          width: 1.315
+          bold: true
+          mirrored: true
+          face: 'Roboto Mono'
+          text: TREBLE v1.0\nby Ken Choi
+
+      text_treble_github:
+        what: utility_text
+        where: &treble_github
+          ref: *treble_version
+          shift: [0, -5]
+        params:
+          side: B
+          layer: SilkS
+          height: 1.315
+          width: 1.315
+          bold: true
+          mirrored: true
+          face: 'Roboto Mono'
+          text: github.com/kkckrnz/treble
+          
+  # cover plate        
+  treble_cover_plate:
+    template: kicad8
+
+    outlines:
+      - outline: cover
+        layer: Edge.Cuts
+
+    footprints:
+      cover_mounting_holes:
+        what: mountinghole_m2_via
+        where: cover_mounting_holes
+
+      logo:
+        what: logo_treble
+        where: *cover
+
+      text_treble_version:
+        what: utility_text
+        where: *treble_version
+        params:
+          side: B
+          layer: SilkS
+          height: 1.315
+          width: 1.315
+          bold: true
+          mirrored: true
+          face: 'Roboto Mono'
+          text: TREBLE v1.0\nby Ken Choi
+
+      text_treble_github:
+        what: utility_text
+        where: *treble_github
+        params:
+          side: B
+          layer: SilkS
+          height: 1.315
+          width: 1.315
+          bold: true
+          mirrored: true
+          face: 'Roboto Mono'
+          text: github.com/kkckrnz/treble
+
+  # bototm plate
+  treble_bottom_plate:
+    template: kicad8
+    outlines:
+      - outline: board
+        layer: Edge.Cuts
+        
+    footprints:
+      switch_cutout:
+        what: cutout_switch
+        where: [switch, switch_mirror]
+
+      mcu_cutout:
+        what: cutout_mcu
+        where: *mcu
+
+      jst_cutout:
+        what: cutout_jst
+        where: *jst
+
+      cover_mounting_holes:
+        what: mountinghole_m2_via
+        where: cover_mounting_holes
+
+      plate_mounting_holes:
+        what: mountinghole_m2_via
+        where: plate_mounting_holes
+
+      filled_zone:
+        what: utility_filled_zone
+        params:
+          side: F&B
+          fill_type: solid
+        
+      antenna_keepout_zone:
+        what: utility_ruled_area
+        where: *cover
+        params:
+          width: 2kx - 0.5
+          height: 3ky - 0.5
+
+      text_treble_version:
+        what: utility_text
+        where: *treble_version
+        params:
+          side: B
+          layer: SilkS
+          height: 1.315
+          width: 1.315
+          bold: true
+          mirrored: true
+          face: 'Roboto Mono'
+          text: TREBLE v1.0\nby Ken Choi
+
+      text_treble_github:
+        what: utility_text
+        where: *treble_github
+        params:
+          side: B
+          layer: SilkS
+          height: 1.315
+          width: 1.315
+          bold: true
+          mirrored: true
+          face: 'Roboto Mono'
+          text: github.com/kkckrnz/treble

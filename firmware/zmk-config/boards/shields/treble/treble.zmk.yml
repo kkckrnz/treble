@@ -1,0 +1,9 @@
+file_format: "1"
+id: treble
+name: Treble
+type: shield
+url: https://github.com/kkckrnz/treble/
+requires:
+  - pro_micro
+features:
+  - keys

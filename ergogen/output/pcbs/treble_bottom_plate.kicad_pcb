@@ -1,0 +1,2669 @@
+
+
+(kicad_pcb
+  (version 20240108)
+  (generator "ergogen")
+  (generator_version "4.1.0")
+  (general
+    (thickness 1.6)
+    (legacy_teardrops no)
+  )
+  (paper "A3")
+  (title_block
+    (title "treble_bottom_plate")
+    (date "2024-09-01")
+    (rev "1")
+    (company "Ken Choi")
+  )
+
+  (layers
+    (0 "F.Cu" signal)
+    (31 "B.Cu" signal)
+    (32 "B.Adhes" user "B.Adhesive")
+    (33 "F.Adhes" user "F.Adhesive")
+    (34 "B.Paste" user)
+    (35 "F.Paste" user)
+    (36 "B.SilkS" user "B.Silkscreen")
+    (37 "F.SilkS" user "F.Silkscreen")
+    (38 "B.Mask" user)
+    (39 "F.Mask" user)
+    (40 "Dwgs.User" user "User.Drawings")
+    (41 "Cmts.User" user "User.Comments")
+    (42 "Eco1.User" user "User.Eco1")
+    (43 "Eco2.User" user "User.Eco2")
+    (44 "Edge.Cuts" user)
+    (45 "Margin" user)
+    (46 "B.CrtYd" user "B.Courtyard")
+    (47 "F.CrtYd" user "F.Courtyard")
+    (48 "B.Fab" user)
+    (49 "F.Fab" user)
+  )
+
+  (setup
+    (pad_to_mask_clearance 0.05)
+    (allow_soldermask_bridges_in_footprints no)
+    (pcbplotparams
+      (layerselection 0x00010fc_ffffffff)
+      (plot_on_all_layers_selection 0x0000000_00000000)
+      (disableapertmacros no)
+      (usegerberextensions no)
+      (usegerberattributes yes)
+      (usegerberadvancedattributes yes)
+      (creategerberjobfile yes)
+      (dashed_line_dash_ratio 12.000000)
+      (dashed_line_gap_ratio 3.000000)
+      (svgprecision 4)
+      (plotframeref no)
+      (viasonmask no)
+      (mode 1)
+      (useauxorigin no)
+      (hpglpennumber 1)
+      (hpglpenspeed 20)
+      (hpglpendiameter 15.000000)
+      (pdf_front_fp_property_popups yes)
+      (pdf_back_fp_property_popups yes)
+      (dxfpolygonmode yes)
+      (dxfimperialunits yes)
+      (dxfusepcbnewfont yes)
+      (psnegative no)
+      (psa4output no)
+      (plotreference yes)
+      (plotvalue yes)
+      (plotfptext yes)
+      (plotinvisibletext no)
+      (sketchpadsonfab no)
+      (subtractmaskfromsilk no)
+      (outputformat 1)
+      (mirror no)
+      (drillshape 1)
+      (scaleselection 1)
+      (outputdirectory "")
+    )
+  )
+
+  (net 0 "")
+(net 1 "H1_Hole")
+(net 2 "H2_Hole")
+(net 3 "H3_Hole")
+(net 4 "H4_Hole")
+(net 5 "H5_Hole")
+(net 6 "H6_Hole")
+(net 7 "H7_Hole")
+(net 8 "H8_Hole")
+(net 9 "GND")
+
+  
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 90 150 0)
+            
+            (fp_text reference "CS1"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 90 133 0)
+            
+            (fp_text reference "CS2"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 90 116 0)
+            
+            (fp_text reference "CS3"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 108 150 0)
+            
+            (fp_text reference "CS4"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 108 133 0)
+            
+            (fp_text reference "CS5"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 108 116 0)
+            
+            (fp_text reference "CS6"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 126 145.75 0)
+            
+            (fp_text reference "CS7"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 126 128.75 0)
+            
+            (fp_text reference "CS8"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 126 111.75 0)
+            
+            (fp_text reference "CS9"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 144 141.5 0)
+            
+            (fp_text reference "CS10"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 144 124.5 0)
+            
+            (fp_text reference "CS11"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 144 107.5 0)
+            
+            (fp_text reference "CS12"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 162 145.75 0)
+            
+            (fp_text reference "CS13"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 162 128.75 0)
+            
+            (fp_text reference "CS14"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 162 111.75 0)
+            
+            (fp_text reference "CS15"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 180 145.75 0)
+            
+            (fp_text reference "CS16"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 180 128.75 0)
+            
+            (fp_text reference "CS17"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 180 111.75 0)
+            
+            (fp_text reference "CS18"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 155.25 167 0)
+            
+            (fp_text reference "CS19"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 177.75 167 0)
+            
+            (fp_text reference "CS20"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 195.75 179.75 0)
+            
+            (fp_text reference "CS21"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 324 150 0)
+            
+            (fp_text reference "CS22"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 324 133 0)
+            
+            (fp_text reference "CS23"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 324 116 0)
+            
+            (fp_text reference "CS24"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 306 150 0)
+            
+            (fp_text reference "CS25"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 306 133 0)
+            
+            (fp_text reference "CS26"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 306 116 0)
+            
+            (fp_text reference "CS27"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 288 145.75 0)
+            
+            (fp_text reference "CS28"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 288 128.75 0)
+            
+            (fp_text reference "CS29"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 288 111.75 0)
+            
+            (fp_text reference "CS30"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 270 141.5 0)
+            
+            (fp_text reference "CS31"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 270 124.5 0)
+            
+            (fp_text reference "CS32"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 270 107.5 0)
+            
+            (fp_text reference "CS33"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 252 145.75 0)
+            
+            (fp_text reference "CS34"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 252 128.75 0)
+            
+            (fp_text reference "CS35"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 252 111.75 0)
+            
+            (fp_text reference "CS36"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 234 145.75 0)
+            
+            (fp_text reference "CS37"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 234 128.75 0)
+            
+            (fp_text reference "CS38"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 234 111.75 0)
+            
+            (fp_text reference "CS39"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 258.75 167 0)
+            
+            (fp_text reference "CS40"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 236.25 167 0)
+            
+            (fp_text reference "CS41"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutSwitch
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 218.25 179.75 0)
+            
+            (fp_text reference "CS42"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 0 0)
+                (size 3.4 3.4)
+                (drill 3.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at -5.5 0 0)
+                (size 1.7 1.7)
+                (drill 1.7)
+                (layers "*.Cu" "*.Mask")
+            )
+            
+            (pad "" np_thru_hole circle
+                (at 0 -5.9 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole circle
+                (at 5 -3.8 0)
+                (size 2.4 2.4)
+                (drill 2.4)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutMCU
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 207 121.534 0)
+            
+            (fp_text reference "CM1"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole oval
+                (at 7.62 1.27 0)
+                (size 2.2 30.14)
+                (drill oval 2.2 30.14)
+                (layers "*.Cu" "*.Mask")
+            )
+            (pad "" np_thru_hole oval
+                (at -7.62 1.27 0)
+                (size 2.2 30.14)
+                (drill oval 2.2 30.14)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+        (module CutoutMCU
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 220.25 131.75 0)
+            
+            (fp_text reference "CJ1"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (pad "" np_thru_hole oval
+                (at -0.25 0 0)
+                (size 4.5 2.2)
+                (drill oval 4.5 2.2)
+                (layers "*.Cu" "*.Mask")
+            )
+        )
+        
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 193.75 145.75 0)
+        
+        (fp_text reference "H1" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 1 "H1_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 193.75 111.75 0)
+        
+        (fp_text reference "H2" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 2 "H2_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 220.25 145.75 0)
+        
+        (fp_text reference "H3" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 3 "H3_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 220.25 111.75 0)
+        
+        (fp_text reference "H4" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 4 "H4_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 87.375 186.125 0)
+        
+        (fp_text reference "H5" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 5 "H5_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 87.375 101.125 0)
+        
+        (fp_text reference "H6" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 6 "H6_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 326.625 186.125 0)
+        
+        (fp_text reference "H7" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 7 "H7_Hole"))
+    )
+    
+
+    (module "MountingHole_2.2mm_M2_Pad_Via"
+        (version 20210722)
+        (layer "F.Cu")
+        (tedit 56DDB9C7)
+        (at 326.625 101.125 0)
+        
+        (fp_text reference "H8" 
+            (at 0 -3.2)
+            (layer "F.SilkS") hide 
+            (effects
+                (font
+                    (size 1 1)
+                    (thickness 0.15)
+                )
+            )
+        )
+        
+        (fp_circle (center 0 0) (end 2.45 0) (layer "F.CrtYd") (width 0.05) (fill none))
+        (pad "" thru_hole circle locked (at 1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at 0 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at 0 1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at 1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at -1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 -1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at -1.166726 1.166726) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at 1.65 0) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+        (pad "" thru_hole circle locked (at 0 -1.65) (size 0.7 0.7) (drill 0.4) (layers *.Cu *.Mask) (net 8 "H8_Hole"))
+    )
+    
+
+  (zone
+    (net 9)
+    (net_name "GND")
+    (locked no)
+    (layers "F&B.Cu")
+    
+    (hatch edge 0.5)
+    
+    (connect_pads 
+      (clearance 0.508)
+    )
+    (min_thickness 0.25)
+    (filled_areas_thickness no)
+    (fill 
+      yes
+      (thermal_gap 0.5)
+      (thermal_bridge_width 0.5)
+      (smoothing chamfer)
+      (radius 0.5)
+      (island_removal_mode 1)
+      (island_area_min 5)
+      
+      
+      
+      
+      
+      
+      
+    )
+    (polygon
+      (pts
+        (xy 0 0) (xy 420 0) (xy 420 297) (xy 0 297) 
+      )
+    )
+  )
+    
+
+        (module RuledArea
+            (layer F.Cu)
+            (tedit 58D3FE32)
+            (at 207 128.75 0)
+            
+            (fp_text reference "RA1"
+                (at 0 -3.2)
+                (layer F.SilkS) hide
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (fp_text user ""
+                (at 0 -9 -180)
+                (layer Dwgs.User)
+                (effects
+                    (font
+                        (size 1 1)
+                        (thickness 0.15)
+                    )
+                )
+            )
+            
+            (zone
+                (layers "F&B.Cu")
+                
+                (hatch edge 0.508)
+                (connect_pads
+                    (clearance 0)
+                )
+                (min_thickness 0.254)
+                (keepout
+                    (tracks allowed)
+                    (vias allowed)
+                    (pads allowed)
+                    (copperpour not_allowed)
+                    (footprints allowed)
+                )
+                (fill
+                    (thermal_gap 0.508)
+                    (thermal_bridge_width 0.508)
+                )
+                (polygon
+                    (pts
+                        (xy 189.25 103.5)
+                        (xy 224.75 103.5)
+                        (xy 224.75 154)
+                        (xy 189.25 154)
+                    )
+                )
+            )
+        )
+
+        
+
+  (gr_text "TREBLE v1.0\nby Ken Choi"
+    (at 207 145.75 0)
+    (layer "B.SilkS" )
+    (effects
+      (font (face "Roboto Mono")
+        (size 1.315 1.315)
+        (thickness 0.15)
+        (bold yes)
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+
+  (gr_text "github.com/kkckrnz/treble"
+    (at 207 150.75 0)
+    (layer "B.SilkS" )
+    (effects
+      (font (face "Roboto Mono")
+        (size 1.315 1.315)
+        (thickness 0.15)
+        (bold yes)
+        
+      )
+      (justify  mirror)
+    )
+  )
+      
+  (gr_line (start 326.625 192.5) (end 87.375 192.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 81 186.125) (end 81 101.125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 87.375 94.75) (end 326.625 94.75) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 333 101.125) (end 333 186.125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 81 186.125) (mid 82.8671943 190.6328057) (end 87.375 192.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 87.375 94.75) (mid 82.8671943 96.6171943) (end 81 101.125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 333 101.125) (mid 331.1328057 96.6171943) (end 326.625 94.75) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 326.625 192.5) (mid 331.1328057 190.6328057) (end 333 186.125) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+
+)
+
