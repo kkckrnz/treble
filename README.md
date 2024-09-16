@@ -7,7 +7,7 @@ Treble keyboard is a 42 key, low profile choc v1, monoblock, moderate column sta
 
 The sandwich PCB design concept came from [Horizon keyboard](https://github.com/skarrmann/horizon). Bottom plate cutouts for through-hole pins makes it so that keyboard can be put on any surface, and the cover plate hides all the other internal components. Overall, this design makes the keyboard clean, low profile and look more finished without needing a dedicated case.
 
-![treble_pcbs](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![treble_pcbs](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_pcbs.jpeg)
 
 
 ## Features

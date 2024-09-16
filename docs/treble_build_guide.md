@@ -15,7 +15,7 @@
 4. Apply heat on the pad to connect diode to the PCB
 5. Add solder to the other pad
 
-![diode](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![diode](https://github.com/kkckrnz/treble/blob/main/docs/images/diode.jpeg)
 
 ### Power & Reset switch
 1. Add solder to the pads on one side
@@ -23,7 +23,7 @@
 3. Heat the pads to connect the switch to the PCB
 4. Solder the rest of the pads
 
-![power_switch](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![power_switch](https://github.com/kkckrnz/treble/blob/main/docs/images/power_switch.jpeg)
 
 
 ## 2. Through-hole components
