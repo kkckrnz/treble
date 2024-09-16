@@ -9,6 +9,7 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 
 ![treble_pcbs](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
+
 ## Features
 - Rectangular design for improved stability; easier to put on your lap and type
 - Low profile: total height is about 15mm tall
@@ -17,6 +18,7 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 - 6 thumb keys: enough thumb keys for switching to different layers
 - PCBs-for-case design
 - Wireless/Wired depending on your preference
+
 
 ## Bill of Materials
 
@@ -44,8 +46,10 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 - Male JST connector is only needed if the battery doesn't come with it
 - You don't need Power switch, JST connector, and Battery if you build a wired keyboard
 
+
 ## Printable Treble
 Download [Treble-A4.pdf](/docs/treble-A4.pdf) and print it. Test the keyboard layout with your own hands.
+
 
 ## PCB order guide
 1. Download gerber files from *Releases* on sidebar
@@ -79,6 +83,7 @@ Most options are default. Changed options in *italic*:
 
 I recommend **LeadFree HASL** option because you will be handling the keyboard directly without a case. Pick the PCB color of your choice. **Remove Mark** so you won't see random number printed on the PCB.
 
+
 ## Firmware
 ### ZMK
 1. Setup GitHub Repo by following [ZMK documentation](https://zmk.dev/docs/user-setup#github-repo)
@@ -100,8 +105,10 @@ git push -u origin main
 ### Other Firmware
 Since the keyboard is pro micro compatible it should be able to run QMK & KMK as well (not tested).
 
+
 ## Build guide
 Follow [Build Guide](docs/treble_build_guide.md) to assemble the keyboard.
+
 
 ## Feedback
 For any issues or questions please let me know.

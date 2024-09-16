@@ -6,6 +6,7 @@
 4. Key switches & Keycaps
 5. Assembly
 
+
 ## 1. SMD components
 ### Diodes
 1. Add solder to one pad of the PCB
@@ -23,6 +24,7 @@
 4. Solder the rest of the pads
 
 ![power_switch](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+
 
 ## 2. Through-hole components
 ### MCU board
@@ -50,13 +52,13 @@ Solder MCU board:
 ![muc_board](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
 ### JST connector
-#### JST female connector
+#### JST connector (Female)
 1. Insert the female JST connector into the PCB
 2. Flip over the PCB and solder the pins 
 
 ![jst_female](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
-#### (optional) JST male connector
+#### JST connector (Male)
 1. Follow this [video guide](https://www.youtube.com/watch?v=UD1h8ug3wQQ) to install connector to the battery
 2. Positive wire should be inserted to the positive female JST connector pin marked on the PCB
 
@@ -70,11 +72,13 @@ Solder MCU board:
 
 ![battery](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
+
 ## 3. Testing
 1. Flash the firmware.
 2. Go to [keyboard tester](https://www.keyboardtester.com/tester.html) and simulate key press using a pair of tweezers.
 
 ![testing](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+
 
 ## 4. Key switches & Keycaps
 1. Insert switches into the PCB
@@ -83,6 +87,7 @@ Solder MCU board:
 
 ![switches-keycaps](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
+
 ## 5. Assembly
 1. Put the main PCB and bottom plate together (four corners mounting holes)
 2. Mount the standoffs
@@ -90,6 +95,7 @@ Solder MCU board:
 4. Put rubber feet on the bottom
 
 ![assembly](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+
 
 ## Finished keyboard
 
