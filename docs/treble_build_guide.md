@@ -33,7 +33,7 @@ Soldering to the PCB:
 2. Flip the PCB and solder the top and bottom pins
 3. Solder the rest of the pins
 
-![sockets](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![socket](https://github.com/kkckrnz/treble/blob/main/docs/images/socket.jpeg)
 
 Insert pins:
 1. Place kapton tape over the top of each socket
