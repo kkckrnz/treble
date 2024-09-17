@@ -45,7 +45,7 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 - You don't need Power switch, JST connector, and Battery if you build a wired keyboard
 
 ## Printable Treble
-Download [Treble-A4.pdf](/docs/treble-A4.pdf) and print it. Test the keyboard layout with your own hands.
+Download [Treble-A4.pdf](/docs/treble-A4.pdf) and print it (scale at 100%). Test the keyboard layout with your own hands.
 
 ## PCB order guide
 1. Download gerber files from *Releases* on sidebar

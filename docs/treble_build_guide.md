@@ -6,7 +6,6 @@
 4. Key switches & Keycaps
 5. Assembly
 
-
 ## 1. SMD components
 ### Diodes
 1. Add solder to one pad of the PCB
@@ -24,7 +23,6 @@
 4. Solder the rest of the pads
 
 ![power_switch](https://github.com/kkckrnz/treble/blob/main/docs/images/power_switch.jpeg)
-
 
 ## 2. Through-hole components
 ### MCU board
@@ -72,13 +70,11 @@ Solder MCU board:
 
 ![battery](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
-
 ## 3. Testing
 1. Flash the firmware.
 2. Go to [keyboard tester](https://www.keyboardtester.com/tester.html) and simulate key press using a pair of tweezers.
 
 ![testing](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
-
 
 ## 4. Key switches & Keycaps
 1. Insert switches into the PCB
@@ -87,7 +83,6 @@ Solder MCU board:
 
 ![switches-keycaps](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
 
-
 ## 5. Assembly
 1. Put the main PCB and bottom plate together (four corners mounting holes)
 2. Mount the standoffs
@@ -95,7 +90,6 @@ Solder MCU board:
 4. Put rubber feet on the bottom
 
 ![assembly](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
-
 
 ## Finished keyboard
 
