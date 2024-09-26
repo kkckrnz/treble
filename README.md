@@ -2,8 +2,8 @@
 Treble keyboard is a 42 key, low profile choc v1, monoblock, moderate column staggered, wireless/wired mechanical keyboard powered by pro micro compatible MCU board. It is designed with [ergogen](https://github.com/ergogen/ergogen), the ergonomic keyboard generator.
 
 ![treble_top](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_top.jpg)
-![treble_front](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_front.jpg)
 ![treble_bottom](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_bottom.jpg)
+![treble_front](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_front.jpg)
 
 The sandwich PCB design concept came from [Horizon keyboard](https://github.com/skarrmann/horizon). Bottom plate cutouts for through-hole pins makes it so that keyboard can be put on any surface, and the cover plate hides all the other internal components. Overall, this design makes the keyboard clean, low profile and look more finished without needing a dedicated case.
 

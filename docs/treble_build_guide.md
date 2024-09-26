@@ -38,7 +38,7 @@ Insert pins:
 2. Poke pins through the tape
 3. Pins sit about 2mm above the top of the socket when fully inserted.
 
-![pins](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![pins](https://github.com/kkckrnz/treble/blob/main/docs/images/pins.jpeg)
 
 Solder MCU board:
 1. Place MCU face down on the pins
@@ -47,20 +47,20 @@ Solder MCU board:
 4. Solder the rest of the pins
 5. Remove MCU and kapton tape
 
-![muc_board](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![muc_board](https://github.com/kkckrnz/treble/blob/main/docs/images/mcu.jpeg)
 
 ### JST connector
 #### JST connector (Female)
 1. Insert the female JST connector into the PCB
 2. Flip over the PCB and solder the pins 
 
-![jst_female](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![jst_female](https://github.com/kkckrnz/treble/blob/main/docs/images/jst_female.jpeg)
 
 #### JST connector (Male)
 1. Follow this [video guide](https://www.youtube.com/watch?v=UD1h8ug3wQQ) to install connector to the battery
-2. Positive wire should be inserted to the positive female JST connector pin marked on the PCB
+2. Check battery polarity. Positive wire should be inserted to the positive female JST connector pin marked on the PCB
 
-![jst_male](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![jst_male](https://github.com/kkckrnz/treble/blob/main/docs/images/jst_male.jpeg)
 
 #### Battery
 1. Make sure the power switch is OFF (marked **X** on the PCB)
@@ -68,20 +68,20 @@ Solder MCU board:
 3. Put the battery in place
 4. Socket the MCU board
 
-![battery](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![battery](https://github.com/kkckrnz/treble/blob/main/docs/images/battery.jpeg)
 
 ## 3. Testing
 1. Flash the firmware.
 2. Go to [keyboard tester](https://www.keyboardtester.com/tester.html) and simulate key press using a pair of tweezers.
 
-![testing](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![testing](https://github.com/kkckrnz/treble/blob/main/docs/images/testing.jpeg)
 
 ## 4. Key switches & Keycaps
 1. Insert switches into the PCB
 2. Place keycaps on the switches
 3. Flip the PCB and solder switch pins
 
-![switches-keycaps](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![switches-keycaps](https://github.com/kkckrnz/treble/blob/main/docs/images/switches.jpeg)
 
 ## 5. Assembly
 1. Put the main PCB and bottom plate together (four corners mounting holes)
@@ -89,9 +89,9 @@ Solder MCU board:
 3. Place the cover plate on top of standoffs
 4. Put rubber feet on the bottom
 
-![assembly](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![assembly](https://github.com/kkckrnz/treble/blob/main/docs/images/assembly.jpeg)
 
 ## Finished keyboard
 
-![treble_front](https://github.com/kkckrnz/treble/blob/main/docs/images/placeholder.jpeg)
+![treble_top](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_top.jpeg)
 
