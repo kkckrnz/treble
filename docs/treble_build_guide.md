@@ -93,5 +93,5 @@ Solder MCU board:
 
 ## Finished keyboard
 
-![treble_top](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_top.jpeg)
+![treble_top](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_top.jpg)
 
