@@ -10,7 +10,7 @@ The sandwich PCB design concept came from [Horizon keyboard](https://github.com/
 ![treble_pcbs](https://github.com/kkckrnz/treble/blob/main/docs/images/treble_pcbs.jpg)
 
 ## Features
-- Rectangular design for improved stability; easier to put on your lap and type
+- Rectangular design for improved stability; easier to place on your lap or a laptop
 - Low profile: total height is about 15mm tall
 - Compact: overall size smaller than Apple Magic Keyboard
 - Column staggered: mildly staggered so it's easy transition from row staggered keyboard yet it provides more comfortable typing experience
@@ -106,7 +106,13 @@ Follow [Build Guide](docs/treble_build_guide.md) to assemble the keyboard.
 ## Feedback
 For any issues or questions please let me know.
 
-If you have built and enjoyed the keyboard, consider supporting me so I can work on future developments.
+If you have built and enjoyed the keyboard, consider supporting me.
+
+Future development ideas:
+- QMK & KMK firmware
+- Hot swap switch support
+- Low profile case
+- MX version
 
 [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/kkckrnz)
 

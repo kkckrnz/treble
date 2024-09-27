@@ -6,6 +6,11 @@
 4. Key switches & Keycaps
 5. Assembly
 
+## General Tips
+- Pads and pins connected to GND and Battery Positive are more difficult to solder. Consider increasing temperature for those pads and pins.
+- Flux helps especially on those hard-to-solder pins and pads.
+- I used 0.3mm solder wire for SMD components and 0.8mm wire for the rest.
+
 ## 1. SMD components
 ### Diodes
 1. Add solder to one pad of the PCB
