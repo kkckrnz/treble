@@ -56,7 +56,7 @@ Solder MCU board:
 
 ### JST connector
 #### JST connector (Female)
-Note: if JST connector pins are longer than 1.6mm, you may want to cut them down slightly before soldering.
+Note: if JST connector pins are longer than 3.2mm, you may want to cut them down slightly before soldering.
 1. Insert the female JST connector into the PCB
 2. Flip over the PCB and solder the pins
 
