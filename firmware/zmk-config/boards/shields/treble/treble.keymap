@@ -10,7 +10,7 @@
             // | Esc   |   Q   |   W   |   E   |   R   |   T   |               |   Y   |   U   |   I   |   O   |   P   | BSPC  |
             // | Tab   |   A   |   S   |   D   |   F   |   G   |               |   H   |   J   |   K   |   L   |   ;   | '     |
             // | Shift |   Z   |   X   |   C   |   V   |   B   |               |   N   |   M   |   ,   |   .   |   /   | Shift |
-            //                                 | Ctrl  |Ent Cmd|  Alt  |  L-1  |spc Cmd|  L-2  |
+            //                                 | Ctrl  |Gui Ent|  L-1  |  L-2  |Gui Spc|  Alt  |
 
             bindings = <
 &kp ESC    &kp Q  &kp W  &kp E  &kp R      &kp T                         &kp Y           &kp U     &kp I      &kp O    &kp P     &kp BSPC
@@ -21,9 +21,9 @@
         };
 
         layer_1 {
-            // |   `   |   1   |   2   |   3   |   4   |   5   |               |       |       |       |       |       |       |
-            // |   '   |   6   |   7   |   8   |   9   |   0   |               |       | Left  | Down  |  Up   | Right |       |
-            // |       |   \   |   -   |   =   |   [   |   ]   |               |       | Home  | PG DN | PG UP | End   |       |
+            // |   `   |       |       |       |       |       |               |       |       |       |       |       |       |
+            // |       |   \   |   -   |   =   |   [   |   ]   |               |       | Left  | Down  |  Up   | Right |       |
+            // |       |       |       |       |       |       |               |       | Home  | PG DN | PG UP | End   |       |
             //                                 |       |       |       |       |       |       |
 
             bindings = <
