@@ -94,7 +94,6 @@ git push -u origin main
 
 - If you use MCU board other than nice!nano v2, then you will have to edit `build.yaml` file.
 - [Precompiled firmware](/firmware/treble-nice_nano_v2-zmk.uf2.zip) is also available.
-- Check out my personal [zmk-config](https://github.com/kkckrnz/zmk-config-treble) to see how I configured my keymap.
 - There's [video guide](https://www.youtube.com/watch?v=O_urj-rF3bQ) by Joe Scotto if you would rather setup from scratch.
 
 ### Other Firmware
